@@ -1,0 +1,44 @@
+{
+  "name": "bookings-mcp",
+  "version": "1.0.0",
+  "description": "MCP server exposing booking operations with strict read/write tool separation and approval-gated writes. Runs over stdio and Streamable HTTP.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "bookings-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "dev:http": "tsx src/index.ts --http --port 3270",
+    "demo": "tsx examples/demo-client.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "ai-agents",
+    "bookings",
+    "tool-calling"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "express": "^5.3.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11"
+  }
+}
