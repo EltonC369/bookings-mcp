@@ -1,8 +1,8 @@
 # bookings-mcp
 
-[![CI](https://github.com/YOUR_USERNAME/bookings-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/bookings-mcp/actions/workflows/ci.yml)
+[![CI](https://github.com/EltonC369/bookings-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/EltonC369/bookings-mcp/actions/workflows/ci.yml)
 
-> Replace `YOUR_USERNAME` in the badge URL after forking/cloning this repository.
+> Replace `EltonC369` in the badge URL after forking/cloning this repository.
 
 An MCP (Model Context Protocol) server that demonstrates production-grade safety patterns for giving AI agents write access to real systems: **strict read/write tool separation** and **approval-gated writes**. Every mutating tool requires a one-time approval token that is cryptographically bound to the exact arguments a human signed off on — change one field after approval and the token is dead.
 
